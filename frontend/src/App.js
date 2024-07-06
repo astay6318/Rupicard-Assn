@@ -11,7 +11,7 @@ function App() {
     e.preventDefault()
     const data = { name, number }
     try {
-      const response = await axios.post('https://rupicardassnbackend-astay6318s-projects.vercel.app/submit/', data);
+      const response = await axios.post('http://localhost:3001/submit', data);
       console.log(response.data);
       alert('Data submitted successfully!');
     } catch (error) {
